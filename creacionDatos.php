@@ -2,12 +2,12 @@
 // Archivo php para el "administrador" para crear la base de datos necesaria
 // y las tablas, con los campos requeridos.
 
-// Datos generales para la aplicaci�n web:
+// Datos generales para la aplicacion web:
 $servidor="127.0.0.1"; // "localhost"
 $usuario_bd="root"; // Usuario Administrador de MySQL
 $clave_bd=""; // Clave del Usuario Administrador de MySQL
-$basedatos="ejemploDeCreacionBBDD";
-$tabla1="usuarios";
+$basedatos="ejemploDeCreacionBBDD"; // Nombre de la Base de Datos
+$tabla1="usuarios"; // Nombre de la tabla 1
 
 $sql_crearbasedatos = "CREATE DATABASE $basedatos";
 
@@ -24,7 +24,7 @@ $sql_insertarregistros1.= "('ejemplo','ejemplo','ejemplo');";
 // Inicialmente intentaremos conectar con el servidor MySQL instalado en el servidor web.
 $conexion=mysqli_connect($servidor,$usuario_bd,$clave_bd);
 if (! $conexion){
-	echo "ERROR: Imposible establecer conexi�n con el servidor (puede que est� desactivado o que no se encuentre en el servidor $servidor).<br>\n";
+	echo "ERROR: Imposible establecer conexion con el servidor (puede que est� desactivado o que no se encuentre en el servidor $servidor).<br>\n";
 }
 else{
  	// Como pudo conectarse con el servidor, intentaremos crear la base de datos, y despu�s la seleccionaremos para poder trabajar sobre ella.
