@@ -21,7 +21,7 @@ $sql_creartabla1.= "usuario CHAR(15) PRIMARY KEY NOT NULL, clave CHAR(15) NOT NU
 $sql_insertarregistros1 = "INSERT INTO $tabla1 VALUES ";
 $sql_insertarregistros1.= "('felipe','feli','usuario'),";
 $sql_insertarregistros1.= "('ana','anita','usuario'),";
-$sql_insertarregistros1.= "('joan','admin','administrador');";
+$sql_insertarregistros1.= "('joan','admin','administrador'),";
 $sql_insertarregistros1.= "('ejemplo','ejemplo','ejemplo');";
 
 // Inicialmente intentaremos conectar con el servidor MySQL instalado en el servidor web.
