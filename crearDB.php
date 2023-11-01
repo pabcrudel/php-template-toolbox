@@ -1,25 +1,4 @@
 <?php
-// CREAR TABLA
-function crearTabla($conexion, $sql_creartabla, $tabla) {
-  $resultado=mysqli_query($conexion, $sql_creartabla);
-  if (!$resultado) {
-    echo "ERROR: Imposible crear la tabla $tabla (puede que ya exista o que no se tenga permiso para crearla).<br>\n";
-  }
-  else {
-    echo "Tabla $tabla creada.<br>\n";
-  }
-}
-
-// INSERTAR REGISTROS EN TABLA
-function insertarTabla($conexion, $sql_insertarregistros, $tabla) {
-  $resultado=mysqli_query($conexion, $sql_insertarregistros);
-  if (!$resultado) {
-    echo "ERROR: Imposible insertar registros iniciales en tabla $tabla (puede que ya existan esos registros o que no se tengan los permisos).<br>\n";
-  }
-  else {
-    echo "Registros iniciales insertados satisfactoriamente en la Tabla $tabla.<br>\n";
-  }
-}
 
 // Archivo php para el "administrador" para crear la base de datos necesaria
 // y las tablas, con los campos requeridos.
@@ -82,6 +61,29 @@ else{
   echo "Cerrando la conexion con el servidor...<br>\n";
   mysqli_close($conexion);
 }
+
+// CREAR TABLA
+function crearTabla($conexion, $sql_creartabla, $tabla) {
+  $resultado=mysqli_query($conexion, $sql_creartabla);
+  if (!$resultado) {
+    echo "ERROR: Imposible crear la tabla $tabla (puede que ya exista o que no se tenga permiso para crearla).<br>\n";
+  }
+  else {
+    echo "Tabla $tabla creada.<br>\n";
+  }
+}
+
+// INSERTAR REGISTROS EN TABLA
+function insertarTabla($conexion, $sql_insertarregistros, $tabla) {
+  $resultado=mysqli_query($conexion, $sql_insertarregistros);
+  if (!$resultado) {
+    echo "ERROR: Imposible insertar registros iniciales en tabla $tabla (puede que ya existan esos registros o que no se tengan los permisos).<br>\n";
+  }
+  else {
+    echo "Registros iniciales insertados satisfactoriamente en la Tabla $tabla.<br>\n";
+  }
+}
+
 
 echo "Fin del programa.<br>\n";
 ?>
