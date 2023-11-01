@@ -59,7 +59,7 @@ if (isset($_POST['usuario']) && isset($_POST['clave'])) {
 		mysqli_close($conexion);
 	}
 }else{
-	echo "<a href='index.php'>Inicie una sesion primero.</a><br>\n";
+	echo "<a href='inicioSesion.html'>Inicie una sesion primero.</a><br>\n";
 } 
 ?>
 </body></html>
