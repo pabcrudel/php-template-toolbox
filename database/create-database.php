@@ -80,7 +80,9 @@ $tables = [
   ],
 ];
 
+// Database name
 $dbName = "products";
 
+// How to call the database creation script
 createDatabase($dbName, $tables);
 ?>
