@@ -3,8 +3,8 @@
 // and tables with required fields.
 
 // Importing my libraries
-require_once "tools/set-connection.php";
-require_once "tools/execute-query.php";
+require_once "set-connection.php";
+require_once "execute-query.php";
 
 function createDatabase($dbName, $tables) {
   // Establish connection with MySQL
