@@ -10,7 +10,7 @@ $tables = [
   "administrators" => [
     "structure" => [
       "user VARCHAR(20) PRIMARY KEY NOT NULL",
-      "password VARCHAR(20) NOT NULL"
+      "key VARCHAR(20) NOT NULL"
     ],
     "records" => [
       ["admin", "admin"],
