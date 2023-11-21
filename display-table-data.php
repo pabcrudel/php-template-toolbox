@@ -1,7 +1,5 @@
 <?php
 // Importing my libraries
-require_once "database/create-database.php";
-require_once "database/drop-database.php";
 require_once "database/set-connection.php";
 require_once "database/execute-query.php";
 
